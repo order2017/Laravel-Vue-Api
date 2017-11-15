@@ -1,5 +1,6 @@
 <template>
     <div>
+        <top-nav></top-nav>
         <transition name="fade" mode="out-in">
             <router-view></router-view>
         </transition>
@@ -7,9 +8,10 @@
 </template>
 
 <script>
+    import TopNav from './menu/TopNav'
     export default {
-        mounted() {
-
+        components: {
+            TopNav
         }
     }
 </script>
